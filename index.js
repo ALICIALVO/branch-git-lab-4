@@ -1,8 +1,8 @@
 const messageElement = document.getElementById('message');
 const changeMessageButton = document.getElementById('changeMessageButton');
 
-changeMessageButton.addEventListener('mouseover', changeMessage);
+changeMessageButton.addEventListener('click', changeMessage);
 
 function changeMessage() {
-  messageElement.textContent = 'New Message!';
+  messageElement.textContent = 'Updated Message Text!';
 }
