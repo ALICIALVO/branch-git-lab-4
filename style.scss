@@ -1,0 +1,33 @@
+// Variables
+$primary-color: #3498db;
+$font-size: 16px;
+
+// Nesting
+.container {
+  width: 100%;
+  max-width: 1200px;
+
+  // Child selector
+  h1 {
+    color: $primary-color;
+    font-size: $font-size;
+  }
+
+  // Hover effect
+  &:hover {
+    background-color: lighten($primary-color, 10%);
+  }
+}
+
+// Mixins
+@mixin center-element {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-box {
+  @include center-element;
+  background-color: $primary-color;
+  color: #fff;
+}
